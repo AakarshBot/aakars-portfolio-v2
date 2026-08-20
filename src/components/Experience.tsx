@@ -9,14 +9,19 @@ export function Experience() {
           <div>
             <SectionLabel>Experience</SectionLabel>
             <p className="mt-6 max-w-xs text-sm leading-relaxed text-white/45 sm:mt-8">
-              From football writing to club media, technology and global tournament publishing — a career built across the sports media ecosystem.
+              A career that has moved from football writing and editing into technology, club leadership and global tournament publishing.
             </p>
           </div>
           <div>
             <div className="flex flex-col gap-5 border-b border-white/15 pb-8 sm:gap-6 sm:pb-10 md:flex-row md:items-end md:justify-between">
-              <h2 className="max-w-3xl text-[2.75rem] font-semibold leading-[0.95] tracking-[-0.05em] sm:text-5xl md:text-7xl">
-                A decade inside sports media.
-              </h2>
+              <div>
+                <h2 className="max-w-3xl text-[2.75rem] font-semibold leading-[0.95] tracking-[-0.05em] sm:text-5xl md:text-7xl">
+                  From the byline to the global stage.
+                </h2>
+                <p className="mt-5 max-w-2xl text-sm leading-6 text-white/45 sm:text-base sm:leading-7">
+                  Ten years of learning the craft from different sides of the sports media ecosystem — writer, editor, analyst, club media leader and global publisher.
+                </p>
+              </div>
               <span className="shrink-0 text-[10px] font-semibold tracking-[0.16em] text-white/35 uppercase sm:text-xs">2014 — now</span>
             </div>
             <div className="border-t border-white/15">
