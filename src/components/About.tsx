@@ -13,6 +13,12 @@ export function About() {
         <p className="max-w-5xl text-3xl font-medium leading-[1.05] tracking-[-0.04em] md:text-5xl">
           I build sports content that has a job to do: make people care, keep them watching and turn attention into a stronger audience.
         </p>
+        <p className="mt-8 max-w-3xl text-base leading-7 text-[var(--muted)] md:text-lg">
+          My career has moved from football writing and editing to Microsoft’s Bing Sports team, from leading Hyderabad FC’s media operation to global football publishing around the FIFA World Cup. Along the way, I’ve scripted a two-season documentary series for Disney+ Hotstar and worked across live sports, sponsors and digital platforms.
+        </p>
+        <p className="mt-6 max-w-3xl text-base leading-7 text-[var(--muted)] md:text-lg">
+          That breadth matters to me. I’ve worked both inside organisations telling the story and on platforms helping audiences find it. It means I’m comfortable with the idea, the execution and the numbers — without losing sight of the audience behind them.
+        </p>
         <div className="mt-10 grid gap-8 border-t border-black/10 pt-8 md:grid-cols-2">
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-[0.14em]">Where I add value</h3>
