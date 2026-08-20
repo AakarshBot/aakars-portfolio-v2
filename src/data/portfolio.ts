@@ -60,10 +60,10 @@ export const caseStudies: CaseStudy[] = [
 
 export const experience: Experience[] = [
   { period: "2026 — Present", role: "Digital Content Manager", company: "Red Lantern Digital Media", description: "Leading digital sports content and publishing across global football properties, with a focus on YouTube strategy, audience growth, packaging and platform-native storytelling." },
-  { period: "2020 — 2025", role: "Media Manager", company: "Hyderabad FC", description: "Led club media strategy, content production, publishing and fan storytelling through a championship-winning era, including documentary and sponsor-facing work." },
-  { period: "2018 — 2020", role: "Content Analyst", company: "Microsoft · Bing Sports", description: "Combined sports editorial, analysis, structured data and product thinking across Bing Sports experiences." },
-  { period: "2016 — 2018", role: "Editor", company: "The 4th Official", description: "Led football editorial output, editing and publishing while developing a deep understanding of digital sports audiences." },
-  { period: "2014 — 2020", role: "Freelance Writer", company: "Multiple Outlets", description: "Built the writing and editorial foundation that developed into a career in sports media leadership, with published work across football outlets." },
+  { period: "2020 — 2025", role: "Media Manager", company: "Hyderabad FC", description: "Led club media strategy, content production, publishing and fan storytelling through a championship-winning era, including documentary, sponsor-facing and matchday work." },
+  { period: "2018 — 2020", role: "Content Analyst", company: "Microsoft · Bing Sports", description: "Combined sports editorial, analysis, structured data and product thinking across Bing Sports experiences, working where sports content, audience behaviour and technology met." },
+  { period: "2016 — 2018", role: "Editor", company: "The 4th Official", description: "Led football editorial output, editing and publishing while developing a strong understanding of digital sports audiences, newsroom workflows and high-volume football coverage." },
+  { period: "2014 — 2020", role: "Freelance Writer", company: "Multiple Outlets", description: "Built the writing and editorial foundation of a decade-long career in sports media, contributing football coverage and analysis across multiple outlets while developing the craft that later shaped content leadership roles." },
 ];
 
 export const skillGroups = [
