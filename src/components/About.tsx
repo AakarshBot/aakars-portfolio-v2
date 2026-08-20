@@ -14,22 +14,22 @@ export function About() {
           I build sports content that has a job to do: make people care, keep them watching and turn attention into a stronger audience.
         </p>
         <p className="mt-8 max-w-3xl text-base leading-7 text-[var(--muted)] md:text-lg">
-          My career has moved from football writing and editing to Microsoft’s Bing Sports team, from leading Hyderabad FC’s media operation to global football publishing around the FIFA World Cup. Along the way, I’ve scripted a two-season documentary series for Disney+ Hotstar and worked across live sports, sponsors and digital platforms.
+          I started in football writing and editing, moved into Microsoft’s Bing Sports team, then spent five years leading Hyderabad FC’s media operation before moving into global football publishing around the FIFA World Cup. I’ve also scripted a two-season documentary series for Disney+ Hotstar and worked across live sports, sponsors and digital platforms.
         </p>
         <p className="mt-6 max-w-3xl text-base leading-7 text-[var(--muted)] md:text-lg">
-          That breadth matters to me. I’ve worked both inside organisations telling the story and on platforms helping audiences find it. It means I’m comfortable with the idea, the execution and the numbers — without losing sight of the audience behind them.
+          That range is a big part of how I work. I’ve been the person shaping the story, the person responsible for getting it out, and the person looking at what happened afterwards. I understand the creative side, the platform and the audience — and I like bringing those three together.
         </p>
         <div className="mt-10 grid gap-8 border-t border-black/10 pt-8 md:grid-cols-2">
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-[0.14em]">Where I add value</h3>
             <p className="mt-3 max-w-md text-base leading-relaxed text-[var(--muted)]">
-              Content strategy, YouTube publishing, social storytelling, editorial leadership, audience growth and sports media operations.
+              Content strategy, YouTube publishing, social storytelling, editorial leadership, audience development and sports media operations.
             </p>
           </div>
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-[0.14em]">How I work</h3>
             <p className="mt-3 max-w-md text-base leading-relaxed text-[var(--muted)]">
-              Start with the audience. Build the right story. Package it well. Measure what happened. Then make the next piece better.
+              Start with the audience. Find the story. Give it the right platform and packaging. Learn from the response. Then make the next piece better.
             </p>
           </div>
         </div>
