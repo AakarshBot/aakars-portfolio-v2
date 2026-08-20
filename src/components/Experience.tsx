@@ -9,16 +9,19 @@ export function Experience() {
           <div>
             <SectionLabel>Experience</SectionLabel>
             <p className="mt-8 max-w-xs text-sm leading-relaxed text-white/45">
-              A career built across writing, editorial, product, club media and global sports publishing.
+              From football writing to club media, technology and global tournament publishing — a career built across the sports media ecosystem.
             </p>
           </div>
           <div>
-            <h2 className="max-w-3xl text-5xl font-semibold tracking-[-0.05em] md:text-7xl">
-              A decade inside sports media.
-            </h2>
-            <div className="mt-16 border-t border-white/15">
+            <div className="flex flex-col gap-6 border-b border-white/15 pb-10 md:flex-row md:items-end md:justify-between">
+              <h2 className="max-w-3xl text-5xl font-semibold tracking-[-0.05em] md:text-7xl">
+                A decade inside sports media.
+              </h2>
+              <span className="shrink-0 text-xs font-semibold tracking-[0.16em] text-white/35 uppercase">2014 — now</span>
+            </div>
+            <div className="border-t border-white/15">
               {experience.map((item, index) => (
-                <article key={`${item.period}-${item.role}`} className="grid gap-5 border-b border-white/15 py-9 md:grid-cols-[150px_1fr_1fr] md:items-start md:py-10">
+                <article key={`${item.period}-${item.role}`} className="group grid gap-5 border-b border-white/15 py-9 transition md:grid-cols-[150px_1fr_1fr] md:items-start md:py-10">
                   <span className="text-xs font-semibold tracking-[0.16em] text-white/40 uppercase">{item.period}</span>
                   <div>
                     <span className="mb-3 block text-xs font-semibold tracking-[0.16em] text-[#aab7a9]">0{index + 1}</span>
