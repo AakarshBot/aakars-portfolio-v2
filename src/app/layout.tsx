@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 const siteUrl = "https://aakarshbommakanti.com";
+const socialImage = "/opengraph-image";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -27,11 +28,13 @@ export const metadata: Metadata = {
     siteName: "Aakarsh Bommakanti",
     type: "website",
     locale: "en_IN",
+    images: [{ url: socialImage, width: 1200, height: 630, alt: "Aakarsh Bommakanti — Sports Media & Content Leader" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Aakarsh Bommakanti | Sports Media & Content Leader",
     description: "Sports media, content strategy, storytelling and audience growth across global football and sports platforms.",
+    images: [socialImage],
   },
   robots: {
     index: true,
