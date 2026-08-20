@@ -26,7 +26,7 @@ export function CaseStudies() {
           </h2>
         </div>
         <p className="text-sm leading-7 text-[var(--muted)]">
-          Publishing, media strategy and storytelling across football, clubs and global sports platforms.
+          A decade of football media — from writing and club storytelling to technology, live sports and global publishing.
         </p>
       </div>
 
@@ -67,10 +67,7 @@ export function CaseStudies() {
                         <>
                           <div className="mt-10 grid grid-cols-2 border-y border-black/10">
                             {item.stats.map((stat, statIndex) => (
-                              <div
-                                key={stat.label}
-                                className={`py-6 ${statIndex % 2 === 1 ? "border-l border-black/10 pl-5" : "pr-5"} ${statIndex > 1 ? "border-t border-black/10" : ""}`}
-                              >
+                              <div key={stat.label} className={`py-6 ${statIndex % 2 === 1 ? "border-l border-black/10 pl-5" : "pr-5"} ${statIndex > 1 ? "border-t border-black/10" : ""}`}>
                                 <p className="text-3xl font-semibold tracking-[-0.05em] md:text-4xl">{stat.value}</p>
                                 <p className="mt-2 text-[10px] font-semibold tracking-[0.14em] text-[var(--muted)] uppercase">{stat.label}</p>
                                 {stat.note && <p className="mt-1 text-xs text-[var(--muted)]">{stat.note}</p>}
