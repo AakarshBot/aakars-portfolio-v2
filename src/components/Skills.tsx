@@ -1,0 +1,21 @@
+import { skillGroups } from "@/data/portfolio";
+import { SectionLabel } from "./SectionLabel";
+
+export function Skills() {
+  return (
+    <section id="skills" className="border-y border-black/10 bg-[var(--surface)]">
+      <div className="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32">
+        <SectionLabel>Expertise</SectionLabel>
+        <h2 className="max-w-3xl text-5xl font-semibold tracking-[-0.05em] md:text-7xl">Strategy, content, data and leadership.</h2>
+        <div className="mt-16 grid gap-0 md:grid-cols-2 lg:grid-cols-4">
+          {skillGroups.map((group) => (
+            <div key={group.title} className="border-t border-black/15 p-6 pl-0 lg:border-l lg:border-t-0 lg:pl-7">
+              <h3 className="text-sm font-semibold tracking-[0.16em] uppercase">{group.title}</h3>
+              <ul className="mt-7 space-y-3 text-[var(--muted)]">{group.items.map(item => <li key={item}>{item}</li>)}</ul>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
