@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 
+const resumeUrl = "https://raw.githubusercontent.com/AakarshBot/aakars-portfolio-new/main/public/AakarshBommakanti-Resume.pdf";
+
 const links = [
   ["Work", "#work"],
   ["Experience", "#experience"],
@@ -26,7 +28,7 @@ export function Navbar() {
         <a href="#top" className="text-sm font-semibold tracking-[0.16em] uppercase">Aakarsh</a>
         <div className="hidden items-center gap-7 text-sm md:flex">
           {links.map(([label, href]) => <a className="transition-opacity hover:opacity-55" href={href} key={label}>{label}</a>)}
-          <a className="border-b border-black pb-1 font-semibold" href="/AakarshBommakanti-Resume.pdf">CV ↗</a>
+          <a className="border-b border-black pb-1 font-semibold" href={resumeUrl} target="_blank" rel="noreferrer">CV ↗</a>
         </div>
         <a className="text-sm md:hidden" href="#contact">Contact ↗</a>
       </nav>
