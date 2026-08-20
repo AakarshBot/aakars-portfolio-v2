@@ -56,15 +56,15 @@ export const caseStudies: CaseStudy[] = [
 ];
 
 export const experience: Experience[] = [
-  { period: "2026 — Present", role: "Digital Content Manager", company: "Red Lantern Digital Media", description: "Leading digital sports content and publishing across global football properties, with a focus on YouTube strategy, audience growth, packaging and platform-native storytelling." },
-  { period: "2020 — 2025", role: "Media Manager", company: "Hyderabad FC", description: "Led club media strategy, content production, publishing and fan storytelling through a championship-winning era, including documentary and sponsor-facing work." },
-  { period: "2018 — 2020", role: "Content Analyst", company: "Microsoft · Bing Sports", description: "Combined sports editorial, analysis, structured data and product thinking across Bing Sports experiences." },
-  { period: "2016 — 2018", role: "Editor", company: "The 4th Official", description: "Led football editorial output, editing and publishing while developing a deep understanding of digital sports audiences." },
-  { period: "2014 — 2020", role: "Freelance Writer", company: "Multiple Outlets", description: "Built the writing and editorial foundation that developed into a career in sports media leadership, with published work across football outlets." },
+  { period: "2026 — Present", role: "Digital Content Manager", company: "Red Lantern Digital Media", description: "Leading digital sports content and publishing across global football properties, including FIFA World Cup programming. Focused on YouTube strategy, audience growth, content packaging and platform-native storytelling at global scale." },
+  { period: "2020 — 2025", role: "Media Manager", company: "Hyderabad FC", description: "Led the club's media and content operation across strategy, production, publishing, matchday coverage, fan culture and commercial campaigns. Also scripted the two-season Future Is Us documentary series for Disney+ Hotstar." },
+  { period: "2018 — 2020", role: "Content Analyst", company: "Microsoft · Bing Sports", description: "Worked across sports editorial, structured data and product experience, helping shape how sports information was organised and surfaced for audiences on Bing." },
+  { period: "2016 — 2018", role: "Editor", company: "The 4th Official", description: "Edited and led football editorial output across a fast-moving digital publication, building the editorial judgement and audience understanding that became the foundation for later leadership roles." },
+  { period: "2014 — 2020", role: "Freelance Writer", company: "Multiple Football Outlets", description: "Built a broad editorial foundation through football writing across multiple publications, developing the subject knowledge, voice and audience instincts that continue to inform the work today." },
 ];
 
 export const skillGroups = [
-  { title: "Strategy", items: ["Content Strategy", "Audience Development", "Editorial Strategy", "Programming" ] },
+  { title: "Strategy", items: ["Content Strategy", "Audience Development", "Editorial Strategy", "Programming"] },
   { title: "Content", items: ["Video Production", "Storytelling", "Visual Scripting", "Social Publishing"] },
   { title: "Platforms", items: ["YouTube Strategy", "Platform Analytics", "SEO", "Content Packaging"] },
   { title: "Leadership", items: ["Team Management", "Editorial Leadership", "Stakeholder Management", "Cross-functional Collaboration"] },
