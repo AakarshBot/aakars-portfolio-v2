@@ -56,11 +56,11 @@ export function CaseStudies() {
                   <p className="mt-3 max-w-md text-sm leading-7 text-[var(--muted)] sm:mt-4">{item.description}</p>
 
                   {item.stats && (
-                    <div className="mt-7 grid grid-cols-2 border-t border-black/10 pt-5 sm:mt-8 sm:pt-6">
+                    <div className={`mt-7 grid border-t border-black/10 pt-5 sm:mt-8 sm:pt-6 ${item.stats.length === 3 ? "grid-cols-3" : "grid-cols-2"}`}>
                       {item.stats.map((stat) => (
-                        <div key={stat.label} className="pr-4">
-                          <div className="text-xl font-semibold tracking-[-0.045em] sm:text-2xl">{stat.value}</div>
-                          <div className="mt-1 max-w-[10rem] text-[9px] font-semibold uppercase tracking-[0.11em] text-[var(--muted)] sm:text-[10px] sm:tracking-[0.12em]">
+                        <div key={stat.label} className="pr-3 sm:pr-4">
+                          <div className="text-lg font-semibold tracking-[-0.045em] sm:text-2xl">{stat.value}</div>
+                          <div className="mt-1 max-w-[9rem] text-[8px] font-semibold uppercase leading-4 tracking-[0.1em] text-[var(--muted)] sm:text-[10px] sm:tracking-[0.12em]">
                             {stat.label}
                           </div>
                         </div>
