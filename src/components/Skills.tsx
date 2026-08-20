@@ -16,7 +16,7 @@ export function Skills() {
           <div>
             <SectionLabel>Expertise</SectionLabel>
             <p className="mt-8 max-w-xs text-sm leading-relaxed text-[var(--muted)]">
-              A decade of working across football media, club publishing, global sports platforms and digital products.
+              Ten years across football media, club publishing, global sports platforms and digital products.
             </p>
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-[var(--muted)]">
               The common thread: knowing what is worth making, how to package it, and how to get people to care.
@@ -28,7 +28,7 @@ export function Skills() {
               Strategy, content, platforms and people.
             </h2>
             <p className="mt-7 max-w-2xl text-base leading-7 text-[var(--muted)] md:text-lg">
-              Not a list of software or buzzwords. These are the areas where editorial judgement, creative execution and audience thinking come together in the work.
+              The work sits at the intersection of editorial judgement, creative execution and audience thinking.
             </p>
 
             <div className="mt-14 grid gap-0 md:grid-cols-2 lg:grid-cols-4">
@@ -39,12 +39,7 @@ export function Skills() {
                     index === 0 ? "lg:pl-0 lg:border-l-0" : ""
                   }`}
                 >
-                  <div className="flex items-center justify-between">
-                    <span className="text-[10px] font-semibold tracking-[0.16em] text-[var(--muted)]">
-                      0{index + 1}
-                    </span>
-                    <span className="h-1.5 w-1.5 rounded-full bg-[var(--accent)]" aria-hidden="true" />
-                  </div>
+                  <div className="h-px w-8 bg-[var(--accent)] opacity-70" aria-hidden="true" />
                   <h3 className="mt-5 text-sm font-semibold uppercase tracking-[0.16em]">{group.title}</h3>
                   <p className="mt-4 text-sm leading-6 text-[var(--muted)]">
                     {groupDescriptions[group.title]}
