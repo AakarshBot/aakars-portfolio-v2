@@ -9,7 +9,7 @@ export function Skills() {
           <div>
             <SectionLabel>Expertise</SectionLabel>
             <p className="mt-8 max-w-xs text-sm leading-relaxed text-[var(--muted)]">
-              The mix of editorial judgement, platform knowledge and audience thinking behind the work.
+              The practical mix of editorial judgement, platform knowledge, creative execution and audience thinking built over a decade in sports media.
             </p>
           </div>
           <div>
