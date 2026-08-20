@@ -1,13 +1,24 @@
 export type Metric = { value: string; label: string; note?: string };
 export type Partner = { name: string };
-export type CaseStudy = { number: string; title: string; subtitle: string; metric: string; description: string; tags: string[]; image: string; imageAlt: string };
+export type CaseStudyStat = { value: string; label: string };
+export type CaseStudy = {
+  number: string;
+  title: string;
+  subtitle: string;
+  metric: string;
+  description: string;
+  tags: string[];
+  image: string;
+  imageAlt: string;
+  stats?: CaseStudyStat[];
+};
 export type Experience = { period: string; role: string; company: string; description: string };
 
 const legacyAsset = (file: string) => `https://raw.githubusercontent.com/AakarshBot/aakars-portfolio-new/main/public/${file}`;
 
 export const metrics: Metric[] = [
-  { value: "127.3M", label: "FIFA views", note: "from 66.18M" },
-  { value: "4.95M", label: "hours watched", note: "YouTube audience" },
+  { value: "10+", label: "years in sports media", note: "editorial, content & leadership" },
+  { value: "4.4B", label: "FIFA World Cup views", note: "2026 tournament period" },
   { value: "15,000+", label: "articles published", note: "across football media" },
   { value: "2", label: "documentary seasons", note: "Future Is Us · Disney+ Hotstar" },
 ];
@@ -19,9 +30,14 @@ export const partners: Partner[] = [
 
 export const caseStudies: CaseStudy[] = [
   {
-    number: "01", title: "FIFA", subtitle: "Global YouTube Publishing & Audience Growth", metric: "66.18M → 127.33M",
-    description: "Led publishing, packaging and optimisation across FIFA's global YouTube ecosystem. The work combined programming, metadata, thumbnails, analytics and performance-led iteration to turn audience data into repeatable publishing decisions.",
+    number: "01", title: "FIFA", subtitle: "2026 World Cup · Global YouTube Publishing", metric: "4.4B views · 7.9M subscribers",
+    description: "Led publishing, programming, packaging and optimisation across FIFA's global YouTube ecosystem during the 2026 World Cup. The operation published 2,315 videos across long-form and Shorts, with 79% of viewers new to the channel. Fast-turnaround highlights, match-day programming and data-led packaging were central to the growth.",
     tags: ["YouTube", "Publishing", "Audience Growth"], image: legacyAsset("fifa-yt.jpg"), imageAlt: "FIFA YouTube publishing work",
+    stats: [
+      { value: "2.3B", label: "Shorts views" },
+      { value: "143M", label: "peak daily views" },
+      { value: "2 hrs", label: "to top highlight" },
+    ],
   },
   {
     number: "02", title: "FanCode", subtitle: "Live Sports Content, Social & Tune-ins", metric: "ISL · LaLiga · Live Sports",
