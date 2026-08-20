@@ -18,7 +18,7 @@ const legacyAsset = (file: string) => `https://raw.githubusercontent.com/Aakarsh
 
 export const metrics: Metric[] = [
   { value: "10+", label: "years in sports media", note: "editorial, content & leadership" },
-  { value: "4.4B", label: "FIFA World Cup views", note: "2026 tournament period" },
+  { value: "4.4B", label: "views during the 2026 World Cup", note: "FIFA global YouTube · tournament period" },
   { value: "15,000+", label: "articles published", note: "across football media" },
   { value: "2", label: "documentary seasons", note: "Future Is Us · Disney+ Hotstar" },
 ];
@@ -34,7 +34,6 @@ export const caseStudies: CaseStudy[] = [
     description: "Led publishing, programming, packaging and optimisation across FIFA's global YouTube ecosystem during the 2026 World Cup. The operation published 2,315 videos across long-form and Shorts, with 79% of viewers new to the channel. Fast-turnaround highlights, match-day programming and data-led packaging were central to the growth.",
     tags: ["YouTube", "Publishing", "Audience Growth"], image: legacyAsset("fifa-yt.jpg"), imageAlt: "FIFA YouTube publishing work",
     stats: [
-      { value: "2.3B", label: "Shorts views" },
       { value: "143M", label: "peak daily views" },
       { value: "2 hrs", label: "to top highlight" },
     ],
