@@ -1,6 +1,6 @@
 import { SectionLabel } from "./SectionLabel";
 
-const resumeUrl = "https://raw.githubusercontent.com/AakarshBot/aakars-portfolio-new/main/public/AakarshBommakanti-Resume.pdf";
+const resumeUrl = "https://raw.githubusercontent.com/AakarshBot/aakarsh-portfolio-new/main/public/AakarshBommakanti-Resume.pdf";
 const socialUrl = "https://x.com/aakarsh_ab";
 
 export function Contact() {
@@ -11,15 +11,15 @@ export function Contact() {
           <div>
             <SectionLabel>Contact</SectionLabel>
             <p className="mt-6 max-w-xs text-sm leading-relaxed text-[var(--muted)] sm:mt-8">
-              For senior sports media, content, publishing and audience-growth opportunities.
+              Open to senior sports media, content, publishing and audience-growth opportunities.
             </p>
           </div>
           <div>
             <h2 className="max-w-5xl text-[2.8rem] font-semibold leading-[0.92] tracking-[-0.06em] sm:text-5xl md:text-8xl">
-              Let&apos;s build something people want to watch.
+              Let&apos;s make something worth watching.
             </h2>
-            <p className="mt-6 max-w-xl text-base leading-relaxed text-[var(--muted)] sm:mt-8 sm:text-lg">
-              I bring editorial judgement, creative execution, platform expertise and a decade-plus of sports media experience to the table.
+            <p className="mt-6 max-w-2xl text-base leading-relaxed text-[var(--muted)] sm:mt-8 sm:text-lg">
+              From the first idea to the final publish, I bring editorial judgement, creative execution, platform expertise and more than a decade of sports media experience.
             </p>
             <div className="mt-9 flex flex-wrap gap-x-7 gap-y-4 sm:mt-12 sm:gap-x-8 sm:gap-y-5">
               <a className="border-b border-black pb-2 text-xs font-semibold uppercase tracking-[0.14em] transition-opacity hover:opacity-60 sm:text-sm" href="mailto:aakarsh.bommakanti@gmail.com">Email me ↗</a>
