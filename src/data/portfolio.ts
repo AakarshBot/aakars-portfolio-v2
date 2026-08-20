@@ -7,8 +7,13 @@ export type CaseStudy = {
   metric: string;
   description: string;
   tags: string[];
+  image: string;
+  imageAlt: string;
 };
 export type Experience = { period: string; role: string; company: string; description: string };
+
+const legacyAsset = (file: string) =>
+  `https://raw.githubusercontent.com/AakarshBot/aakars-portfolio-new/main/public/${file}`;
 
 export const metrics: Metric[] = [
   { value: "127.3M", label: "FIFA views" },
@@ -34,6 +39,8 @@ export const caseStudies: CaseStudy[] = [
     metric: "66.18M → 127.33M",
     description: "Publishing, packaging, optimisation and audience strategy across FIFA's global YouTube ecosystem, with a focus on programming, metadata, thumbnails and performance-led iteration.",
     tags: ["YouTube", "Publishing", "Audience Growth"],
+    image: legacyAsset("fifa-yt.jpg"),
+    imageAlt: "FIFA YouTube publishing work",
   },
   {
     number: "02",
@@ -42,6 +49,8 @@ export const caseStudies: CaseStudy[] = [
     metric: "ISL · LaLiga · Live Sports",
     description: "Platform-native content, live coverage, promotional storytelling and tune-ins across major sporting properties, balancing speed, relevance and audience intent.",
     tags: ["Live Sports", "Social", "Content"],
+    image: legacyAsset("fancode-content.jpg"),
+    imageAlt: "FanCode sports content work",
   },
   {
     number: "03",
@@ -50,6 +59,8 @@ export const caseStudies: CaseStudy[] = [
     metric: "Future Is Us · ISL",
     description: "Led media and content strategy around the club's championship era, fan culture and documentary storytelling, including the two-season Future Is Us series for Disney+ Hotstar.",
     tags: ["Club Media", "Documentary", "Fan Culture"],
+    image: legacyAsset("hfc-trophy.jpg"),
+    imageAlt: "Hyderabad FC trophy celebration",
   },
   {
     number: "04",
@@ -58,6 +69,8 @@ export const caseStudies: CaseStudy[] = [
     metric: "Bing Sports",
     description: "Worked across sports content, analysis and product experience for Bing Sports, combining editorial judgement with data and platform thinking.",
     tags: ["Editorial", "Data", "Product"],
+    image: legacyAsset("bing-ui.jpg"),
+    imageAlt: "Bing Sports product experience",
   },
 ];
 
