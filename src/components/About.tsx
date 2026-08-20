@@ -6,7 +6,7 @@ export function About() {
       <div>
         <SectionLabel>About</SectionLabel>
         <p className="mt-8 max-w-xs text-sm leading-relaxed text-[var(--muted)]">
-          Creative thinking backed by editorial judgement, audience data and an understanding of how sports fans behave.
+          More than a decade across football publishing, club media, technology, live sports and global tournament content.
         </p>
       </div>
       <div>
