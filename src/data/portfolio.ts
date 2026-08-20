@@ -1,5 +1,5 @@
 export type Metric = { value: string; label: string; note?: string };
-export type Partner = { name: string };
+export type Partner = { name: string; logo?: string };
 export type CaseStudyStat = { value: string; label: string };
 export type CaseStudy = {
   number: string;
@@ -12,7 +12,7 @@ export type CaseStudy = {
   imageAlt: string;
   stats?: CaseStudyStat[];
 };
-export type Experience = { period: string; role: string; company: string; description: string };
+export type Experience = { period: string; role: string; company: string; description: string; logo?: string };
 
 const legacyAsset = (file: string) => `https://raw.githubusercontent.com/AakarshBot/aakars-portfolio-new/main/public/${file}`;
 
@@ -24,8 +24,12 @@ export const metrics: Metric[] = [
 ];
 
 export const partners: Partner[] = [
-  { name: "FIFA" }, { name: "FanCode" }, { name: "Hyderabad FC" },
-  { name: "Microsoft" }, { name: "Premier League India" }, { name: "Liverpool India" },
+  { name: "FIFA", logo: legacyAsset("fifa.png") },
+  { name: "FanCode", logo: legacyAsset("fancode.png") },
+  { name: "Hyderabad FC", logo: legacyAsset("hfc.png") },
+  { name: "Microsoft", logo: legacyAsset("microsoft.png") },
+  { name: "Premier League India", logo: legacyAsset("pl-india.png") },
+  { name: "Liverpool India", logo: legacyAsset("lfc-india.png") },
 ];
 
 export const caseStudies: CaseStudy[] = [
@@ -33,10 +37,7 @@ export const caseStudies: CaseStudy[] = [
     number: "01", title: "FIFA", subtitle: "2026 World Cup · Global YouTube Publishing", metric: "Historic global publishing scale",
     description: "Led publishing, programming, packaging and optimisation across FIFA's global YouTube ecosystem during the 2026 World Cup. A high-volume operation built around fast-turnaround highlights, match-day programming, data-led packaging and audience behaviour — helping the channel reach a historic level of scale.",
     tags: ["YouTube", "Publishing", "Audience Growth"], image: legacyAsset("fifa-yt.jpg"), imageAlt: "FIFA YouTube publishing work",
-    stats: [
-      { value: "4.4B", label: "views during the tournament" },
-      { value: "143M", label: "peak views in one day" },
-    ],
+    stats: [{ value: "4.4B", label: "views during the tournament" }, { value: "143M", label: "peak views in one day" }],
   },
   {
     number: "02", title: "FanCode", subtitle: "Live Sports Content, Social & Tune-ins", metric: "ISL · LaLiga · Live Sports",
@@ -56,11 +57,11 @@ export const caseStudies: CaseStudy[] = [
 ];
 
 export const experience: Experience[] = [
-  { period: "2026 — Present", role: "Digital Content Manager", company: "Red Lantern Digital Media", description: "Leading digital sports content and publishing across global football properties, including FIFA World Cup programming. Focused on YouTube strategy, audience growth, content packaging and platform-native storytelling at global scale." },
-  { period: "2020 — 2025", role: "Media Manager", company: "Hyderabad FC", description: "Led the club's media and content operation across strategy, production, publishing, matchday coverage, fan culture and commercial campaigns. Also scripted the two-season Future Is Us documentary series for Disney+ Hotstar." },
-  { period: "2018 — 2020", role: "Content Analyst", company: "Microsoft · Bing Sports", description: "Worked across sports editorial, structured data and product experience, helping shape how sports information was organised and surfaced for audiences on Bing." },
-  { period: "2016 — 2018", role: "Editor", company: "The 4th Official", description: "Edited and led football editorial output across a fast-moving digital publication, building the editorial judgement and audience understanding that became the foundation for later leadership roles." },
-  { period: "2014 — 2020", role: "Freelance Writer", company: "Multiple Football Outlets", description: "Built a broad editorial foundation through football writing across multiple publications, developing the subject knowledge, voice and audience instincts that continue to inform the work today." },
+  { period: "2026 — Present", role: "Digital Content Manager", company: "Red Lantern Digital Media · FIFA", logo: legacyAsset("fifa.png"), description: "Leading digital sports content and publishing across global football properties, including FIFA World Cup programming. Focused on YouTube strategy, audience growth, content packaging and platform-native storytelling at global scale." },
+  { period: "2020 — 2025", role: "Media Manager", company: "Hyderabad FC", logo: legacyAsset("hfc.png"), description: "Led the club's media and content operation across strategy, production, publishing, matchday coverage, fan culture and commercial campaigns. Also scripted the two-season Future Is Us documentary series for Disney+ Hotstar." },
+  { period: "2018 — 2020", role: "Content Analyst", company: "Microsoft · Bing Sports", logo: legacyAsset("microsoft.png"), description: "Worked across sports editorial, structured data and product experience, helping shape how sports information was organised and surfaced for audiences on Bing." },
+  { period: "2016 — 2018", role: "Editor", company: "The 4th Official", logo: legacyAsset("4th-official.png"), description: "Edited and led football editorial output across a fast-moving digital publication, building the editorial judgement and audience understanding that became the foundation for later leadership roles." },
+  { period: "2014 — 2020", role: "Freelance Writer", company: "Multiple Football Outlets", logo: legacyAsset("freelance.png"), description: "Built a broad editorial foundation through football writing across multiple publications, developing the subject knowledge, voice and audience instincts that continue to inform the work today." },
 ];
 
 export const skillGroups = [
