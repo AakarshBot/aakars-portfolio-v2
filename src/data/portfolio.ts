@@ -35,6 +35,7 @@ export const caseStudies: CaseStudy[] = [
     tags: ["YouTube", "Publishing", "Audience Growth"], image: legacyAsset("fifa-yt.jpg"), imageAlt: "FIFA YouTube publishing work",
     stats: [
       { value: "4.4B", label: "views during the tournament" },
+      { value: "2,315", label: "videos published" },
       { value: "143M", label: "peak views in one day" },
     ],
   },
