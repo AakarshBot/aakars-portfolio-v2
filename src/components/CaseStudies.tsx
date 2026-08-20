@@ -13,7 +13,7 @@ export function CaseStudies() {
           </h2>
         </div>
         <p className="max-w-md text-sm leading-7 text-[var(--muted)]">
-          Publishing, media strategy and storytelling across football, clubs and global sports platforms.
+          A decade of sports media, from editorial and club storytelling to global publishing and audience strategy.
         </p>
       </div>
 
@@ -39,7 +39,10 @@ export function CaseStudies() {
 
               <div className="flex flex-col justify-between p-6 sm:p-7 md:p-10 lg:p-12">
                 <div>
-                  <p className="mb-6 text-[10px] font-semibold tracking-[0.18em] text-[var(--accent)] uppercase sm:mb-8 sm:text-xs">Case study</p>
+                  <div className="mb-6 flex items-center justify-between gap-4 sm:mb-8">
+                    <p className="text-[10px] font-semibold tracking-[0.18em] text-[var(--accent)] uppercase sm:text-xs">Case study</p>
+                    {index === 0 && <span className="rounded-full border border-black/10 px-2.5 py-1 text-[9px] font-semibold tracking-[0.12em] text-[var(--muted)] uppercase">Global scale</span>}
+                  </div>
                   <h3 className="text-[2.6rem] font-semibold leading-[0.95] tracking-[-0.05em] sm:text-4xl md:text-5xl lg:text-6xl">{item.title}</h3>
                   <p className="mt-4 max-w-md text-base leading-snug text-[var(--muted)] sm:text-lg">{item.subtitle}</p>
                 </div>
@@ -49,11 +52,11 @@ export function CaseStudies() {
                   <p className="mt-3 max-w-md text-sm leading-7 text-[var(--muted)] sm:mt-4">{item.description}</p>
 
                   {item.stats && (
-                    <div className="mt-7 grid grid-cols-3 border-t border-black/10 pt-5 sm:mt-8 sm:pt-6">
+                    <div className={`mt-7 grid border-t border-black/10 pt-5 sm:mt-8 sm:pt-6 ${item.stats.length === 2 ? "grid-cols-2" : "grid-cols-3"}`}>
                       {item.stats.map((stat) => (
-                        <div key={stat.label} className="pr-2 sm:pr-3">
+                        <div key={stat.label} className="pr-3 sm:pr-4">
                           <div className="text-lg font-semibold tracking-[-0.04em] sm:text-xl md:text-2xl">{stat.value}</div>
-                          <div className="mt-1 text-[9px] font-semibold uppercase tracking-[0.1em] text-[var(--muted)] sm:text-[10px] sm:tracking-[0.12em]">
+                          <div className="mt-1 max-w-[9rem] text-[9px] font-semibold uppercase tracking-[0.1em] text-[var(--muted)] sm:text-[10px] sm:tracking-[0.12em]">
                             {stat.label}
                           </div>
                         </div>
