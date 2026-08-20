@@ -1,6 +1,7 @@
 export type Metric = { value: string; label: string; note?: string };
 export type Partner = { name: string };
-export type CaseStudy = { number: string; title: string; subtitle: string; metric: string; description: string; tags: string[]; image: string; imageAlt: string };
+export type CaseStudyStat = { value: string; label: string; note?: string };
+export type CaseStudy = { number: string; title: string; subtitle: string; metric: string; description: string; tags: string[]; image: string; imageAlt: string; stats?: CaseStudyStat[]; highlights?: string[] };
 export type Experience = { period: string; role: string; company: string; description: string };
 
 const legacyAsset = (file: string) => `https://raw.githubusercontent.com/AakarshBot/aakars-portfolio-new/main/public/${file}`;
@@ -19,9 +20,26 @@ export const partners: Partner[] = [
 
 export const caseStudies: CaseStudy[] = [
   {
-    number: "01", title: "FIFA", subtitle: "Global YouTube Publishing & Audience Growth", metric: "66.18M → 127.33M",
-    description: "Led publishing, packaging and optimisation across FIFA's global YouTube ecosystem. The work combined programming, metadata, thumbnails, analytics and performance-led iteration to turn audience data into repeatable publishing decisions.",
-    tags: ["YouTube", "Publishing", "Audience Growth"], image: legacyAsset("fifa-yt.jpg"), imageAlt: "FIFA YouTube publishing work",
+    number: "01",
+    title: "FIFA",
+    subtitle: "2026 FIFA World Cup · Global YouTube Publishing & Audience Growth",
+    metric: "4.4B views · +441.9% vs 2022",
+    description: "Led publishing, programming and performance-led optimisation across FIFA's global YouTube ecosystem during the 2026 FIFA World Cup. The strategy combined high-volume publishing, rapid match-turnaround, packaging, analytics and audience signals to scale the channel to its biggest tournament performance in history.",
+    tags: ["YouTube", "World Cup", "Audience Growth"],
+    image: legacyAsset("fifa-yt.jpg"),
+    imageAlt: "FIFA YouTube publishing work",
+    stats: [
+      { value: "4.4B", label: "Views", note: "+441.9% vs 2022" },
+      { value: "2,315", label: "Videos published", note: "1,457 long · 858 Shorts" },
+      { value: "7.9M", label: "Subscribers", note: "+46.3%" },
+      { value: "16.6B", label: "Impressions", note: "+107.0%" },
+    ],
+    highlights: [
+      "143M views in a single day — the highest daily total in channel history.",
+      "2.3B views came from Shorts, accounting for 52% of tournament-period views.",
+      "Post-Match PCs averaged 200K+ views, while selected Statistical Previews averaged 500K+.",
+      "The ESP v ARG Statistical Preview approached 2M views; tournament compilations averaged 300K+.",
+    ],
   },
   {
     number: "02", title: "FanCode", subtitle: "Live Sports Content, Social & Tune-ins", metric: "ISL · LaLiga · Live Sports",
