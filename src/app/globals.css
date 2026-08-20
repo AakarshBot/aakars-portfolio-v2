@@ -48,6 +48,11 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
+:focus-visible {
+  outline: 2px solid var(--foreground);
+  outline-offset: 4px;
+}
+
 @media (max-width: 639px) {
   html {
     scroll-padding-top: 70px;
