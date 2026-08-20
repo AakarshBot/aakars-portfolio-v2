@@ -30,12 +30,12 @@ export const partners: Partner[] = [
 
 export const caseStudies: CaseStudy[] = [
   {
-    number: "01", title: "FIFA", subtitle: "2026 World Cup · Global YouTube Publishing", metric: "4.4B views · 7.9M subscribers",
+    number: "01", title: "FIFA", subtitle: "2026 World Cup · Global YouTube Publishing", metric: "Historic global publishing scale",
     description: "Led publishing, programming, packaging and optimisation across FIFA's global YouTube ecosystem during the 2026 World Cup. A high-volume operation built around fast-turnaround highlights, match-day programming, data-led packaging and audience behaviour — helping the channel reach a historic level of scale.",
     tags: ["YouTube", "Publishing", "Audience Growth"], image: legacyAsset("fifa-yt.jpg"), imageAlt: "FIFA YouTube publishing work",
     stats: [
-      { value: "143M", label: "peak daily views" },
-      { value: "79%", label: "new viewers" },
+      { value: "4.4B", label: "views during the tournament" },
+      { value: "143M", label: "peak views in one day" },
     ],
   },
   {
