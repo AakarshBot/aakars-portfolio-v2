@@ -47,6 +47,19 @@ export function CaseStudies() {
                 <div className="mt-14 border-t border-black/10 pt-7">
                   <p className="text-2xl font-semibold tracking-[-0.03em] md:text-3xl">{item.metric}</p>
                   <p className="mt-4 max-w-md text-sm leading-7 text-[var(--muted)]">{item.description}</p>
+
+                  {item.stats && (
+                    <div className="mt-8 grid grid-cols-3 border-t border-black/10 pt-6">
+                      {item.stats.map((stat) => (
+                        <div key={stat.label} className="pr-3">
+                          <div className="text-xl font-semibold tracking-[-0.04em] md:text-2xl">{stat.value}</div>
+                          <div className="mt-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-[var(--muted)]">
+                            {stat.label}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
