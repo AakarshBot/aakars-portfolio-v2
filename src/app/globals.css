@@ -15,7 +15,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 90px;
+  scroll-padding-top: 78px;
 }
 
 body {
@@ -25,6 +25,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 
 ::selection {
@@ -39,11 +40,23 @@ a {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 button,
 a {
   -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+  outline: 2px solid var(--foreground);
+  outline-offset: 4px;
+}
+
+@media (max-width: 639px) {
+  html {
+    scroll-padding-top: 70px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
